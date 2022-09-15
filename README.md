@@ -1,13 +1,13 @@
 # Go Template
 
-My simple template for Go (GoLang) projects. This is **not** an official standard
+My simple template for Go (GoLang) projects. This is **not** an official standard!
 
 ## Directories
 
-* `/cmd`: Main application/service directory. Should not be used for packages (libraries).
-* `/bin`: for binaries. Should be included in `.gitignore`. Should be deleted for packages (libraries).
-* `/pkg`: actual packages that can be exported outside of the project. You could remove it from the project if it's used by a lot of other projects or its getting big.
-* `/internal`: like `/pkg`, but for internal use only. Should not be used for packages (libraries).
+* `/cmd`: Main application/service directory. Should not be used for package/library projects.
+* `/bin`: for binaries. Should be included in `.gitignore`. Should not be used for package/library projects.
+* `/pkg`: actual packages that can be exported outside of the project. The packages in this folder could be moved into their own projects if they were too big or used by other a lot of other projects.
+* `/internal`: like `/pkg`, but for internal use only. Should not be used for package/library projects.
 * `/examples`: code with examples to demo a package (library) for example.
 
 ### Other options for bigger projects
